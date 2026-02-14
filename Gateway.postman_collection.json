@@ -1,0 +1,61 @@
+{
+  "info": {
+    "_postman_id": "58404bc9-3813-4bf5-a2cd-31710e433541",
+    "name": "Gateway",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50622686",
+    "_collection_link": "https://go.postman.co/collection/50622686-58404bc9-3813-4bf5-a2cd-31710e433541?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "api/user",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7171/api/users",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7171",
+          "path": [
+            "api",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "api/posts",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImp0aSI6IjI0YmQ3OGNmLWU2NWMtNDZjZC05ZGE4LWY5Yzc1YTI0M2E1NyIsImV4cCI6MTc3MDgwMDMxNCwiaXNzIjoiQXBpR2F0ZXdheSIsImF1ZCI6IllvdXJNaWNyb3NlcnZpY2VzIn0.okbyRzv4ZahaFj06IpoeDWdmfP97VP3tzoaVaTgbqCI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7171/api/post",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7171",
+          "path": [
+            "api",
+            "post"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
